@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.AddBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_book"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="80dp"/>
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/title"
+            android:textColorHint="#D86E6A6A"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/edittext_background"
+            android:paddingHorizontal="8dp"/>
+
+
+        <EditText
+            android:id="@+id/editAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/author"
+            android:textColorHint="#D86E6A6A"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/edittext_background"
+            android:paddingHorizontal="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editPageNumber"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/page_number"
+            android:textSize="20dp"
+            android:textColorHint="#D86E6A6A"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:paddingHorizontal="8dp"
+            android:layout_marginTop="8dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/add"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:background="@drawable/button_background"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
